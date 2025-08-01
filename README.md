@@ -37,3 +37,10 @@ Un clone moderne de l'interface ChatGPT avec mode sombre, historique des convers
    npm install
    npm run dev
    ```
+
+## ✨ Auteur
+
+**AGANZE MOISE**
+
+- [Portfolio](https://moiseaganze.vercel.app/)
+- [Email](aganzedev@gmail.com)
