@@ -21,8 +21,8 @@ export default function Sidebar({
   return (
     <div
       className={`fixed top-0 left-0 h-full bg-base-200 border-r border-base-300 flex flex-col z-20 transition-all duration-300 ${
-        sidebarOpen ? "w-64 min-w-64" : "w-0 min-w-0 overflow-hidden"
-      }`}
+        sidebarOpen ? "w-64 min-w-64" : "w-0 min-w-0 "
+      }overflow-hidden`}
     >
       {/* Header */}
       <div className="flex justify-between items-center p-2">
