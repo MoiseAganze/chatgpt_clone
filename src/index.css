@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, business;
+}
+@import "@fontsource/inter/variable.css";
+
+body {
+  overflow-x: hidden;
+}
