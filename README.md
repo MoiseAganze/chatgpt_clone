@@ -29,7 +29,7 @@ Un clone moderne de l'interface ChatGPT avec mode sombre, historique des convers
 
 1. **Cloner le repo**
    ```bash
-   git clone https://github.com/votre-user/chatgpt-clone.git
+   git clone https://github.com/MoiseAganze/chatgpt_clone.git
    cd chatgpt-clone
    ```
 2. **installation et lancement**
