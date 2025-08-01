@@ -43,4 +43,4 @@ Un clone moderne de l'interface ChatGPT avec mode sombre, historique des convers
 **AGANZE MOISE**
 
 - [Portfolio](https://moiseaganze.vercel.app/)
-- [Email](aganzedev@gmail.com)
+- [Email:aganzedev@gmail.com]
