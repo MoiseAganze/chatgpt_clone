@@ -5,5 +5,5 @@
 @import "@fontsource/inter";
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
 }

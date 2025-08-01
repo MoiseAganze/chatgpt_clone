@@ -72,7 +72,7 @@ export default function App() {
 
   return (
     <div
-      className={`font-sans flex flex-col h-screen ${
+      className={`font-sans flex flex-col h-screen overflow-hidden ${
         darkMode ? "bg-gray-900" : "bg-gray-50"
       }`}
     >
