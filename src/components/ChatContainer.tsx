@@ -36,7 +36,7 @@ export default function ChatContainer({
         sidebarOpen ? "lg:ml-64" : ""
       }`}
     >
-      <div className="flex-1 overflow-y-auto p-4">
+      <div className="flex-1 overflow-y-auto p-4 pb-48">
         {messages.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-full text-center">
             <h2 className="text-2xl lg:text-3xl font-semibold mb-4">
@@ -52,8 +52,10 @@ export default function ChatContainer({
           </div>
         )}
       </div>
-      <div className="p-4  border-base-300 w-full flex justify-center">
-        <InputArea onSend={onNewMessage} />
+      <div className="p-4  border-base-300 w-full flex justify-center relative">
+        <div className="w-full max-w-2xl flex justify-center absolute bottom-20 left-1/2 transform -translate-x-1/2">
+          <InputArea onSend={onNewMessage} />
+        </div>
       </div>
     </div>
   );

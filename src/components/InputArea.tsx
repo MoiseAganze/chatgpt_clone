@@ -33,7 +33,7 @@ export default function InputArea({ onSend }: InputAreaProps) {
   }, [input]);
 
   return (
-    <div className="relative w-full px-4 py-4 max-w-2xl">
+    <div className="relative px-4 py-4 w-full">
       <div className="flex items-end rounded-3xl bg-base-200 px-4 py-3 shadow-md relative">
         {/* Left icons */}
         <div className="flex items-center space-x-1 pr-3 absolute left-2 bottom-2">

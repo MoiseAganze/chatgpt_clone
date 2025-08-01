@@ -25,7 +25,14 @@ export default function App() {
       darkMode ? "business" : "light"
     );
   }, [darkMode]);
-
+  useEffect(() => {
+    // Ouvre le sidebar seulement si largeur >= 1024px (desktop)
+    if (window.innerWidth >= 1024) {
+      setSidebarOpen(true);
+    } else {
+      setSidebarOpen(false);
+    }
+  }, []);
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
