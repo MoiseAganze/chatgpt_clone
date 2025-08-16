@@ -13,12 +13,14 @@ type ChatContainerProps = {
   messages: MessageType[];
   onNewMessage: (content: string) => void;
   sidebarOpen: boolean;
+  writing: boolean;
 };
 
 export default function ChatContainer({
   messages,
   onNewMessage,
   sidebarOpen,
+  writing,
 }: ChatContainerProps) {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -48,6 +50,19 @@ export default function ChatContainer({
             {messages.map((message) => (
               <Message key={message.id} message={message} />
             ))}
+            <div ref={messagesEndRef} />
+          </div>
+        )}
+        {writing && (
+          <div className="space-y-6 max-w-3xl mx-auto pt-20">
+            <Message
+              message={{
+                content: "patientez...",
+                id: Date.now().toString(),
+                role: "assistant",
+                timestamp: new Date(),
+              }}
+            />
             <div ref={messagesEndRef} />
           </div>
         )}
