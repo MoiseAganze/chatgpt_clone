@@ -61,7 +61,7 @@ export default function App() {
     const message = encodeURIComponent(content);
     setwriting(true);
     await axios
-      .get(`${import.meta.env.VITE_MY_AI_HOST}/chat?message=${message}`)
+      .get(`${import.meta.env.VITE_MY_AI_HOST}/gemini?message=${message}`)
       .then((res) => {
         const { message } = res.data;
         const assistantMessage: Message = {
